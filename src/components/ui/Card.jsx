@@ -1,8 +1,9 @@
 import { IoHeart } from "react-icons/io5";
+import { gameIconLink } from "../../data";
 
 export default function Card({title, genre, image, completeStatus, likeStatus, onLike, onComplete}) {
 
-  const imageLink = `https://res.cloudinary.com/dkboh1euu/image/upload/v1774705501/${image}.png`;
+  const imageLink = `${gameIconLink}${image}.png`;
 
   return (
     <div 

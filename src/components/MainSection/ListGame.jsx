@@ -17,18 +17,10 @@ export default function ListGame() {
     localStorage.setItem("gamesData", JSON.stringify(games));
   }, [games]);
 
-  const handleLike = (id) => {
+  const handleToogleStatus = (id, status) => {
     setGames((prevGames) =>
       prevGames.map((game) =>
-        game.id === id ? { ...game, like: !game.like } : game
-      )
-    );
-  };
-
-  const handleComplete = (id) => {
-    setGames((prevGames) =>
-      prevGames.map((game) =>
-        game.id === id ? { ...game, complete: !game.complete } : game
+        game.id === id ? { ...game, [status]: !game[status] } : game
       )
     );
   };
@@ -45,8 +37,8 @@ export default function ListGame() {
             image={game.image} 
             completeStatus={game.complete} 
             likeStatus={game.like}
-            onLike={() => handleLike(game.id)}
-            onComplete={() => handleComplete(game.id)}
+            onLike={() => handleToogleStatus(game.id, "like")}
+            onComplete={() => handleToogleStatus(game.id, "complete")}
             />
         ))}
         
