@@ -3,8 +3,8 @@ import { navItems } from "../data/navItems";
 
 export default function Navbar() {
   return (
-    <nav className="">
-      <div className="flex justify-between items-center p-3 md:px-7 text-slate-300">
+    <nav >
+      <div className="flex justify-between items-center p-3 md:px-7">
         <div className="flex items-center gap-2 hover:skew-1 duration-300 cursor-pointer">
           <img src="public/Logo.png" alt="Logo" className="w-10" />
           <p className="text-xl font-bold tracking-wider hover:text-purple-400 duration-300">
@@ -25,7 +25,7 @@ export default function Navbar() {
 
         <IoPerson
           size={25}
-          className="text-slate-300 hover:text-purple-400 duration-300 hover:scale-120 cursor-pointer"
+          className="hover:text-purple-400 duration-300 hover:scale-120 cursor-pointer"
         />
       </div>
 
@@ -36,7 +36,7 @@ export default function Navbar() {
             <li key={item.id} className="cursor-pointer">
               <Icon
                 size={20}
-                className="text-slate-300 hover:text-purple-400 duration-300 hover:scale-120"
+                className="hover:text-purple-400 duration-300 hover:scale-120"
               />
             </li>
           );
