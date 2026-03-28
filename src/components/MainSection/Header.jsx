@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <section className="flex flex-col items-center justify-center py-4 md:py-8 text-center">
+    <section id="home" className="flex flex-col items-center justify-center py-4 md:py-8 text-center">
       <div className="font-chakra font-bold leading-none tracking-tighter">
         <h2 className="text-white text-4xl md:text-7xl">
           MAIN QUEST?

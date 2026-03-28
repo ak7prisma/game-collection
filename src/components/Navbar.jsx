@@ -18,7 +18,9 @@ export default function Navbar() {
               key={item.id}
               className="flex items-center gap-2 hover:text-purple-400 duration-300 tracking-widest cursor-pointer"
             >
-              {item.name}
+              <a href={item.link}>
+                 {item.name}
+              </a>
             </li>
           ))}
         </ul>
@@ -34,10 +36,12 @@ export default function Navbar() {
           const Icon = item.icon; 
           return (
             <li key={item.id} className="cursor-pointer">
-              <Icon
-                size={20}
-                className="hover:text-purple-400 duration-300 hover:scale-120"
+              <a href={item.link}>
+                <Icon
+                  size={20}
+                  className="hover:text-purple-400 duration-300 hover:scale-120"
               />
+              </a>
             </li>
           );
         })}
