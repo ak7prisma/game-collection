@@ -29,7 +29,7 @@ export default function Navbar() {
         />
       </div>
 
-      <ul className="fixed z-50 md:hidden flex justify-center bottom-2 left-4 right-4 h-15 rounded-4xl bg-slate-700 backdrop-blur-lg p-2 items-center gap-20">
+      <ul className="fixed z-50 md:hidden flex justify-center bottom-2 left-4 right-4 h-15 rounded-4xl bg-slate-700/70 backdrop-blur-sm p-2 items-center gap-20">
         {navItems.map((item) => {
           const Icon = item.icon; 
           return (
