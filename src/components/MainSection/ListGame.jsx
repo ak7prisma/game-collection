@@ -4,7 +4,7 @@ export default function ListGame(){
 
 
     return(
-        <section className="mx-3">
+        <section className="mx-3 md:mx-10">
             <Card />
         </section>
     );

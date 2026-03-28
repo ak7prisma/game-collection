@@ -4,7 +4,7 @@ import { navItems } from "../data/navItems";
 export default function Navbar() {
   return (
     <nav className="font-rajdhani">
-      <div className="fixed top-0 left-0 right-0 flex py-5 px-5 md:px-10 justify-between items-center bg-slate-900/90">
+      <div className="fixed z-50 top-0 left-0 right-0 flex py-5 px-5 md:px-10 justify-between items-center backdrop-blur-sm bg-slate-900/70">
         <div className="flex items-center gap-2 hover:skew-1 duration-300 cursor-pointer">
           <img src="public/Logo.png" alt="Logo" className="w-10" />
           <p className="text-xl font-bold tracking-widest hover:text-purple-400 duration-300">
