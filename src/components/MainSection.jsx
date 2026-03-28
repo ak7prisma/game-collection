@@ -3,7 +3,7 @@ import ListGame from "./MainSection/ListGame";
 
 export default function MainSection(){
     return(
-        <main>
+        <main className="mt-22">
             <Header />
             <ListGame />
         </main>

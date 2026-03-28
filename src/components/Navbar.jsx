@@ -3,16 +3,16 @@ import { navItems } from "../data/navItems";
 
 export default function Navbar() {
   return (
-    <nav >
-      <div className="flex justify-between items-center p-3 md:px-7">
+    <nav className="font-rajdhani">
+      <div className="fixed top-0 left-0 right-0 flex py-5 px-5 md:px-10 justify-between items-center bg-slate-900/90">
         <div className="flex items-center gap-2 hover:skew-1 duration-300 cursor-pointer">
           <img src="public/Logo.png" alt="Logo" className="w-10" />
-          <p className="text-xl font-bold tracking-wider hover:text-purple-400 duration-300">
+          <p className="text-xl font-bold tracking-widest hover:text-purple-400 duration-300">
             Game Lib
           </p>
         </div>
         
-        <ul className="hidden md:flex items-center gap-25 text-md font-semibold">
+        <ul className="hidden md:flex items-center gap-25 text-lg font-semibold">
           {navItems.map((item) => (
             <li
               key={item.id}
