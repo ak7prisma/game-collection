@@ -1,10 +1,21 @@
 import Card from "../ui/Card";
 import { games as initialGames } from "../../data/games";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function ListGame() {
 
-  const [games, setGames] = useState(initialGames)
+ const [games, setGames] = useState(() => {
+    const savedGames = localStorage.getItem("gamesData");
+    
+    if (savedGames) {
+      return JSON.parse(savedGames);
+    }
+    return initialGames;
+  });
+
+  useEffect(() => {
+    localStorage.setItem("gamesData", JSON.stringify(games));
+  }, [games]);
 
   const handleLike = (id) => {
     setGames((prevGames) =>
