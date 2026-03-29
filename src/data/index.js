@@ -1,0 +1,1 @@
+export const gameIconLink = "https://res.cloudinary.com/dkboh1euu/image/upload/v1774705501/";
